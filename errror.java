@@ -419,6 +419,8 @@ else{
 }   
 
 int nd=data%10;
+
+int nd=data%10;
 int nc = data/10;
 res.addFirst(nd);
 return nc;
