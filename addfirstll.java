@@ -69,16 +69,16 @@ public class Main {
     }
 
     public int getAt(int idx) {
-      if (size == 0) {
+      if (size == 0) { //to check if list has null size remaining in it
         System.out.println("List is empty");
         return -1;
-      } else if (idx < 0 || idx >= size) {
+      } else if (idx < 0 || idx >= size) { //if invalid arguments are entered
         System.out.println("Invalid arguments");
         return -1;
       } else {
         Node temp = head;
         for (int i = 0; i < idx; i++) {
-          temp = temp.next;
+          temp = temp.next; //to move to the next location
         }
         return temp.data;
       }
