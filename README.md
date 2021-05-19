@@ -1,4 +1,3 @@
-# Data-Structures
-The repositry cointains all the programs for beignners
-comprises of linked list and stack and queues
+# Data-Structures And Algorithms
+The repositry cointains java Programs for DSA
 
