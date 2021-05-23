@@ -3,6 +3,8 @@
 3. Input and Output is managed for you. 
 
 Note -> Please watch the question video for clarity. Use the statis sum data member to complete your code.*/
+
+   
 import java.io.*;
 import java.util.*;
 
@@ -86,7 +88,15 @@ public class Main {
 
   static int sum = 0;
   public static void rwsol(Node node){
-    // write your code here
+    if(node == null){
+        return;
+    }
+    rwsol(node.right);
+    int od = node.data;
+    node.data = sum;
+    sum += od;
+    
+    rwsol(node.left);
   }
 
   public static void main(String[] args) throws Exception {
