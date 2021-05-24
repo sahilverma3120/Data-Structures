@@ -81,7 +81,34 @@ public class Main {
     display(node.left);
     display(node.right);
   }
-
+  public static boolean find(Node node, int data){
+      if(node == null){
+          return false;
+      }
+      if(data > node.data){
+          return find(node.right, data);
+      }
+      else if(data < node.data){
+          return find(node.left, data);
+      }
+      else{
+          return true;
+      }
+  }
+  
+  public static void traverseandprint(Node root, Node node, int tar){
+      if(node == null){
+          return;
+      }
+      traverseandprint(root, node.left,tar);
+      int comp = tar- node.data;
+      if(node.data < comp){
+      if(find(root,comp) == true){
+          System.out.println(node.data + " " + comp);
+      }
+  }
+  traverseandprint(root,node.right, tar);
+}
   public static void main(String[] args) throws Exception {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     int n = Integer.parseInt(br.readLine());
@@ -98,7 +125,8 @@ public class Main {
     int data = Integer.parseInt(br.readLine());
 
     Node root = construct(arr);
-    // write your code here
+    traverseandprint(root,root,data);
+    
   }
 
 }
