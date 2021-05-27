@@ -7,24 +7,6 @@
     2.5. find - return true if there is node in the tree equal to "data"
 3. Input and Output is managed for you.
 */
-import java.io.*;
-import java.util.*;
-
-public class Main {
-  public static class Node {
-    int data;
-    Node left;
-    Node right;
-
-    Node(int data, Node left, Node right) {
-      this.data = data;
-      this.left = left;
-      this.right = right;
-    }
-  }
-
-  public static class Pair {
-    Node node;
     int state;
 
     Pair(Node node, int state) {
