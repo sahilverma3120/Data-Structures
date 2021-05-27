@@ -7,6 +7,24 @@
     2.5. find - return true if there is node in the tree equal to "data"
 3. Input and Output is managed for you.
 */
+    import java.io.*;
+import java.util.*;
+
+public class Main {
+  public static class Node {
+    int data;
+    Node left;
+    Node right;
+
+    Node(int data, Node left, Node right) {
+      this.data = data;
+      this.left = left;
+      this.right = right;
+    }
+  }
+
+  public static class Pair {
+    Node node;
     int state;
 
     Pair(Node node, int state) {
@@ -72,22 +90,59 @@
 
   public static int size(Node node) {
     // write your code here
+    if(node == null){
+        return 0;
+    }
+    int ls = size(node.left);
+    int rs = size(node.right);
+    int ts = ls+rs+1;
+    return ts;
   }
 
   public static int sum(Node node) {
-    // write your code here
+      if(node == null){
+          return 0;
+      }
+    int ls = sum(node.left);
+    int rs = sum(node.right);
+    int ts = ls + rs + node.data;
+    return ts;
   }
 
   public static int max(Node node) {
-    // write your code here
+   if(node.right != null){
+       return max(node.right);
+   }
+   else{
+       return node.data;
+   }
   }
 
   public static int min(Node node) {
-    // write your code here
+     if(node.left != null){
+       return min(node.left);
+   }
+   else{
+       return node.data;
+   }
   }
 
   public static boolean find(Node node, int data){
-    // write your code here
+   if(node == null){
+       return false;
+   }
+ 
+   
+   if(data > node.data){
+       return find(node.right , data);
+   }
+   else if(data < node.data){
+       return find(node.left , data);
+   }
+   else{
+       return true;
+   }
+   
   }  
 
   public static void main(String[] args) throws Exception {
