@@ -6,6 +6,7 @@
     2.4. min - return the value of node with smallest value in BST
     2.5. find - return true if there is node in the tree equal to "data"
 3. Input and Output is managed for you.
+link  to Q- https://www.pepcoding.com/resources/online-java-foundation/binary-search-tree/size-sum-max-min-find-in-bst-official/ojquestion
 */
     import java.io.*;
 import java.util.*;
