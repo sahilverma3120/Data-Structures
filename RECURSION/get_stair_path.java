@@ -4,3 +4,17 @@
 Use sample input and output to take idea about output.
 pepcoding.com/resources/online-java-foundation/recursion-with-arraylists/get-stair-paths-official/ojquestion
 Note -> The online judge can't force you to write the function recursively but that is what the spirit of question is. Write recursive and not iterative logic. The purpose of the question is to aid learning recursion and not test you.*/
+import java.io.*;
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) throws Exception {
+
+    }
+
+    public static ArrayList<String> getStairPaths(int n) {
+        return null;
+    }
+
+}
