@@ -26,7 +26,7 @@ public class Main {
         for(int i = n-1; i>=0; i--)
         {
             for(int j=1;j<=arr[i] && i+j<=dp.length;j++){
-                dp[i]=dp[i]+dp[i+j];
+                dp[i]+=dp[i+j];
             }
         }
         
