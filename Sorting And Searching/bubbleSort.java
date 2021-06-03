@@ -9,13 +9,23 @@ arr2..
 n integers
 Output Format
 Check the sample ouput and question video.*/
+
 import java.io.*;
 import java.util.*;
 
 public class Main {
+    
 
   public static void bubbleSort(int[] arr) {
     //write your code here
+    for(int itr=1;itr<=arr.length-1;itr++){
+     for(int j=0;j<arr.length-itr;j++){
+         if(isSmaller(arr,j+1,j)){
+         swap(arr,j+1,j);
+     }
+    }
+  }
+ 
     
   }
 
