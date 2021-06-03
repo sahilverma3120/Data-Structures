@@ -15,6 +15,15 @@ public class Main {
 
   public static void selectionSort(int[] arr) {
     //write your code here
+    for(int i=0; i<arr.length-1; i++){
+        int mi=i;
+        for(int j=i+1;j<arr.length; j++){
+            if (isSmaller(arr,j,mi)){
+                mi=j;
+            }
+        }
+        swap(arr,i,mi);
+    }
     
   }
 
