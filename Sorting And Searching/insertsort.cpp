@@ -16,6 +16,17 @@ public class Main {
 
   public static void insertionSort(int[] arr) {
     //write your code here
+    for(int i=1; i<arr.length;i++){
+        for(int j=i-1; j>=0;j--){
+            if (isGreater(arr,j,j+1))
+            {
+                swap(arr,j,j+1);
+            }
+            else{
+                break;
+            }
+        }
+    }
     
   }
 
