@@ -15,8 +15,17 @@ public class Main {
 
   public static int[] mergeSort(int[] arr, int lo, int hi) {
     //write your code here
-
-    return null;
+if(lo==hi){
+    int[] ba = new int[1];
+    ba[0]=arr[lo];
+    return ba;
+}
+    
+    int mid=(lo+hi)/2;
+    int[] fsh = mergeSort(arr,lo,mid);
+    int[] ssh = mergeSort(arr,mid+1,hi);
+    int[] fsa = mergeTwoSortedArrays(fsh,ssh);
+    return fsa;
   }
 
   //used for merging two sorted arrays
