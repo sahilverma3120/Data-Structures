@@ -17,6 +17,17 @@ public class Main {
 
   public static void partition(int[] arr, int pivot){
     //write your code here
+    int i=0;
+    int j=0;
+    while(i<arr.length){
+        if(arr[i] > pivot){
+            i++;
+        }else {
+            swap(arr,i,j);
+            i++;
+            j++;
+        }
+    }
     
   }
 
