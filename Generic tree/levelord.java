@@ -4,6 +4,7 @@
 3. Input is managed for you.*/
 
 //https://www.pepcoding.com/resources/online-java-foundation/generic-tree/levelorder-linewise-generic-tree-official/ojquestion
+
 import java.io.*;
 import java.util.*;
 
@@ -99,6 +100,21 @@ public class Main {
 
   public static void levelOrderLinewise(Node node){
     // write your code here
+    Queue<Node> mq = new ArrayDeque<>();
+    mq.add(node);
+    Queue<Node> cq = new ArrayDeque<>();
+    while(mq.size()>0){
+        node = mq.remove();
+        System.out.print(node.data + " ");
+        for( Node child: node.children){
+            cq.add(child);
+        }
+        if(mq.size()==0){
+            mq=cq;
+            cq = new ArrayDeque();
+            System.out.println();
+        }
+    }
   }
 
   public static void main(String[] args) throws Exception {
