@@ -1,4 +1,4 @@
-Given an array of integers nums which is sorted in ascending order, and an integer target, write a function to search target in nums. If target exists, then return its index. Otherwise, return -1.
+/*Given an array of integers nums which is sorted in ascending order, and an integer target, write a function to search target in nums. If target exists, then return its index. Otherwise, return -1.
 
 You must write an algorithm with O(log n) runtime complexity.
 
@@ -20,3 +20,10 @@ Constraints:
 -9999 <= nums[i], target <= 9999
 All the integers in nums are unique.
 nums is sorted in an ascending order.
+*/
+
+class Solution {
+    public int search(int[] nums, int target) {
+        
+    }
+}
