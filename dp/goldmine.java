@@ -4,3 +4,8 @@
 4. You are standing in front of left wall and are supposed to dig to the right wall. You can start from 
      any row in the left wall.
 5. You are allowed to move 1 cell right-up (d1), 1 cell right (d2) or 1 cell right-down(d3)*/
+//  link https://www.pepcoding.com/resources/online-java-foundation/dynamic-programming-and-greedy/goldmine-official/ojquestion
+
+
+
+
