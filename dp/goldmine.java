@@ -6,6 +6,15 @@
 5. You are allowed to move 1 cell right-up (d1), 1 cell right (d2) or 1 cell right-down(d3)*/
 //  link https://www.pepcoding.com/resources/online-java-foundation/dynamic-programming-and-greedy/goldmine-official/ojquestion
 
+import java.io.*;
+import java.util.*;
 
+public class Main {
+
+    public static void main(String[] args) throws Exception {
+        // write your code here
+    }
+
+}
 
 
