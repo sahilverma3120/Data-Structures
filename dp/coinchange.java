@@ -1,4 +1,5 @@
-/*1. You are given a number n, representing the count of coins.
+
+}/*1. You are given a number n, representing the count of coins.
 2. You are given n numbers, representing the denominations of n coins.
 3. You are given a number "amt".
 4. You are required to calculate and print the number of combinations of the n coins using which the 
@@ -12,3 +13,11 @@ Note2 -> You are required to find the count of combinations and not permutations
 */
 // link - https://www.pepcoding.com/resources/online-java-foundation/dynamic-programming-and-greedy/coin-change-combination-official/ojquestion
 //https://www.pepcoding.com/resources/online-java-foundation/dynamic-programming-and-greedy/coin-change-combination-official/ojquestion
+import java.io.*;
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) throws Exception {
+
+    }
