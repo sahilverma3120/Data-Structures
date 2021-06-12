@@ -30,7 +30,7 @@ public class Main {
  int[] dp = new int[tar+1];
   dp[0]=1;
 
- for(int amt=0; amt<=tar; amt++){
+ for(int amt=1; amt<=tar; amt++){
  for(int coin:coins){
      if(coin<=amt){
      int rant = amt-coin;
