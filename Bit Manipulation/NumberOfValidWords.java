@@ -28,7 +28,22 @@ class Solution {
         return mask;
     }
     public List<Integer> findNumOfValidWords(String[] words, String[] puzzles) {
-            `
+       Map<Integer, Integer> map = new HashMap<>();
+        for(String w: words) {
+            int key = toInt(w);
+            map.put(key, map.getOrDefault(key, 0) + 1);
+        }
+        List<Integer> res = new ArrayList<>();
+        for(String p: puzzles) {
+            int original = toInt(p), first = 1 << (p.charAt(0) - 'a'), count = 0;
+            for(int subset = original; subset != 0; subset = (subset - 1) & original) {
+                if((subset & first) != 0) {
+                    count += map.getOrDefault(subset, 0);
+                }
+            }
+            res.add(count);
+        }
+        return res;     `
         
     }
 }
