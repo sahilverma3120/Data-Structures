@@ -19,3 +19,9 @@ Explanation:
 2 valid words for "absoryz" : "aaaa", "asas"
 4 valid words for "actresz" : "aaaa", "asas", "actt", "access"
 There're no valid words for "gaswxyz" cause none of the words in the list contains letter 'g'.*/
+class Solution {
+    public List<Integer> findNumOfValidWords(String[] words, String[] puzzles) {
+            `
+        
+    }
+}
