@@ -20,6 +20,13 @@ Explanation:
 4 valid words for "actresz" : "aaaa", "asas", "actt", "access"
 There're no valid words for "gaswxyz" cause none of the words in the list contains letter 'g'.*/
 class Solution {
+     private int toInt(String s) {
+        int mask = 0;
+        for(int i = s.length() - 1; i >= 0; i--) {
+            mask |= 1 << (s.charAt(i) - 'a');
+        }
+        return mask;
+    }
     public List<Integer> findNumOfValidWords(String[] words, String[] puzzles) {
             `
         
