@@ -1,3 +1,5 @@
+
+// link https://www.pepcoding.com/resources/online-java-foundation/string,-string-builder-and-arraylist/string-with-difference-of-every-two-consecutive-characters-official/ojquestion
 /*1. You are given a string that contains only lowercase and uppercase alphabets. 
 2. You have to form a string that contains the difference of ASCII values of every two consecutive characters between those characters.
    For "abecd", the answer should be "a1b3e-2c1d", as 
