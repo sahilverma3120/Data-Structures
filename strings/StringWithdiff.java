@@ -8,6 +8,8 @@
    'c'-'e' = -2
    'd'-'c' = 1*/
 
+
+
 import java.io.*;
 import java.util.*;
 
@@ -17,7 +19,7 @@ public class Main {
 		StringBuilder ans = new StringBuilder();
 		for(int i = 0 ; i < str.length(); i++){
 			if(i + 1 < str.length()){
-				
+				int diff = str.charAt(i + 1) - str.charAt(i);
 				ans.append(str.charAt(i));
 				ans.append(diff);
 			}else{
@@ -33,6 +35,9 @@ public class Main {
 	}
 
 }
+
+
+                        
 
 
                         
