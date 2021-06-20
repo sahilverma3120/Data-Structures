@@ -14,9 +14,17 @@ import java.util.*;
 public class Main {
 
 	public static String solution(String str){
-		// write your code here
-
-		return null;
+		StringBuilder ans = new StringBuilder();
+		for(int i = 0 ; i < str.length(); i++){
+			if(i + 1 < str.length()){
+				
+				ans.append(str.charAt(i));
+				ans.append(diff);
+			}else{
+				ans.append(str.charAt(i));
+			}
+		}
+		return ans.toString();
 	}
 	public static void main(String[] args) {
 		Scanner scn = new Scanner(System.in);
@@ -25,3 +33,6 @@ public class Main {
 	}
 
 }
+
+
+                        
