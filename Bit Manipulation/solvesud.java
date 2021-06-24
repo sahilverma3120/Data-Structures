@@ -14,34 +14,29 @@ public class Main {
   }
 
   public static void solveSudoku(int[][] arr, int[] rows, int[] cols, int[][] grid, int i, int j) {
-      if(i == arr.length){
-          display(arr);
-          return;
-      }
-      
-    if(arr[i][j] > 0){
-        solveSudoku(arr,rows,cols,grid,j==arr[0].length-1?i+1:i,j == arr[0].length-1?0:j+1);}
-        else{
-            for(int num = 1; num <= 9; num++){
-                if(
-                  (rows[i] &(1<<num)) == 0 &&  (cols[i] &(1<<num)) == 0
-                  &&(grid[i/3][j/3] & (1<<num)) == 0
-                    ){
-                        arr[i][j] = num;
-                        rows[i] ^=  (1<<num);
-                        cols[i] ^=  (1<<num);
-                        grid[i/3][j/3] ^=  (1<<num);
-                        solveSudoku(arr,rows,cols,grid,j==arr[0].length-1?i+1:i,j == arr[0].length-1?0:j+1);
-                         grid[i/3][j/3] ^=  (1<<num);
-                         cols[i] ^=  (1<<num); 
-                         rows[i] ^=  (1<<num);
-                         arr[i][j] = 0;
-                          
-                    }
-            }
+    if (i == arr.length) {
+      display(arr);
+      return;
+    }
+
+    if (arr[i][j] != 0) {
+      solveSudoku(arr, rows, cols, grid, j < 8 ? i : i + 1, j < 8 ? j + 1 : 0);
+    } else {
+      for (int num = 1; num <= 9; num++) {
+        if (((rows[i] & (1 << num)) == 0) && ((cols[j] & (1 << num)) == 0)
+            && ((grid[i / 3][j / 3] & (1 << num)) == 0)) {
+          rows[i] ^= (1 << num);
+          cols[j] ^= (1 << num);
+          grid[i / 3][j / 3] ^= (1 << num);
+          arr[i][j] = num;
+          solveSudoku(arr, rows, cols, grid, j < 8 ? i : i + 1, j < 8 ? j + 1 : 0);
+          arr[i][j] = 0;
+          grid[i / 3][j / 3] ^= (1 << num);
+          cols[j] ^= (1 << num);
+          rows[i] ^= (1 << num);
         }
-    
-    
+      }
+    }
   }
 
   public static void main(String[] args) throws Exception {
@@ -65,3 +60,8 @@ public class Main {
   }
 
 }
+
+
+                        
+                        
+                        
