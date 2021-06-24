@@ -1,4 +1,4 @@
-Sum Of Two Arrays
+/*Sum Of Two Arrays
 Easy  Prev   Next
 1. You are given a number n1, representing the size of array a1.
 2. You are given n1 numbers, representing elements of array a1.
@@ -7,3 +7,14 @@ Easy  Prev   Next
 5. The two arrays represent digits of two numbers.
 6. You are required to add the numbers represented by two arrays and print the
 arrays.
+*/
+import java.io.*;
+import java.util.*;
+
+public class Main{
+
+public static void main(String[] args) throws Exception {
+    // write your code here
+ }
+
+}
