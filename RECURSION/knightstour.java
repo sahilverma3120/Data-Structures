@@ -24,8 +24,7 @@ public class Main {
         int c = Integer.parseInt(br.readLine());
 
         int[][] chess = new int[n][n];
-        printKnightsTour(chess, r, c, 1);
-    }
+        printKnightsTour(chess, r, c, 1)}
 
     public static void printKnightsTour(int[][] chess, int r, int c, int upcomingMove){
         if(r < 0 || c < 0 || r >= chess.length || c >= chess.length || chess[r][c] != 0){
