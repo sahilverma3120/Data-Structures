@@ -1,7 +1,7 @@
 class Solution {
 
-  // TC : O(n2)
-  // SC : O(1)
+
+
   public int triangleNumber(int[] nums) {
     int res  = 0;
 
