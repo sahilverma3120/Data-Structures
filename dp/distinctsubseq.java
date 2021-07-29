@@ -1,3 +1,4 @@
+//https://leetcode.com/problems/distinct-subsequences/submissions/
 class Solution {
    public int numDistinct(String s, String t) {
         int m = s.length();
