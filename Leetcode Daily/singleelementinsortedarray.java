@@ -31,3 +31,12 @@ Your solution must run in O(log n) time and O(1) space.*/
            }
 }
 //Approach 2
+class Solution {
+
+public int singleNonDuplicate(int[] nums) {
+     int res = 0;
+     for(int i : nums)
+         res = (res ^ i);
+     return res;
+}
+}
