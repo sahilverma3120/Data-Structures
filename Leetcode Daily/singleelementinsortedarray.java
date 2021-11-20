@@ -30,3 +30,4 @@ Your solution must run in O(log n) time and O(1) space.*/
         return nums[left];
            }
 }
+//Approach 2
