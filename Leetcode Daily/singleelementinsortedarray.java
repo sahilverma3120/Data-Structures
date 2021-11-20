@@ -1,4 +1,9 @@
-class Solution {
+/*You are given a sorted array consisting of only integers where every element appears exactly twice, except for one element which appears exactly once.
+
+Return the single element that appears only once.
+
+Your solution must run in O(log n) time and O(1) space.*/
+    class Solution {
     public int singleNonDuplicate(int[] nums) {
     
         int left = 0;
@@ -9,7 +14,7 @@ class Solution {
           int mid = (left + right)/2;
           
           if(mid%2==0){
-              if(nums[mid]!=nums[mid+1]){
+              if(nums[mid]==nums[mid+1]){
                   left=mid+2;}
               else{
                   right=mid;
