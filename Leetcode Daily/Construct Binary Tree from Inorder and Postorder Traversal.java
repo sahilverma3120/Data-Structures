@@ -27,7 +27,7 @@ class Solution {
         int[] rightIn = Arrays.copyOfRange(inorder, index + 1, len);
         
         int[] leftPost = Arrays.copyOfRange(postorder, 0, index);
-        int[] rightPost = Arrays.copyOfRange(postorder, index, len-2 );
+        int[] rightPost = Arrays.copyOfRange(postorder, index, len - 1);
         
         TreeNode lroot = buildTree(leftIn, leftPost);
         TreeNode rroot = buildTree(rightIn, rightPost);
