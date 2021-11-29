@@ -11,7 +11,7 @@ class Solution {
         public UnionFind(int num) {
             parent = new int[num];
             weight = new int[num];
-            
+            // parent weight
             for(int i =  0; i < num; i++) {
                 parent[i] = i;
                 weight[i] = 1;
