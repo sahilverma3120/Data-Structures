@@ -2,10 +2,8 @@
 2. You are required to complete the body of add function. "add" function is expected to add a new node with given data to the tree and return the new root.
 3. Input and Output is managed for you.*/
 //https://www.pepcoding.com/resources/online-java-foundation/binary-search-tree/add-node-to-bst-official/ojquestion
-
 import java.io.*;
 import java.util.*;
-
 public class Main {
   public static class Node {
     int data;
