@@ -6,7 +6,6 @@ public class Main {
     int data;
     ArrayList<Node> children = new ArrayList<>();
   }
-
   public static void display(Node node) {
     String str = node.data + " -> ";
     for (Node child : node.children) {
@@ -14,7 +13,7 @@ public class Main {
     }
     str += ".";
     System.out.println(str);
-
+//syso
     for (Node child : node.children) {
       display(child);
     }
